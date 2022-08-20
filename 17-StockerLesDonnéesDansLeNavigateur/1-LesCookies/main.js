@@ -1,23 +1,24 @@
-// il faut avoir un serveur pour simuler un ordinateur pour voir les cookies
+// Créer un cookie
+document.cookie = 'prenom=John';
 
-// Creer un cookie
-document.cookie = 'prenom = John';
+// Afficher tous les cookies
 // alert(document.cookie);
 
 // Modifier un cookie
+document.cookie = 'prenom=Mark';
 
-document.cookie = 'prenom = Mark';
-
-// Supprimer un cookie 
-
+// Supprimer un cookie
 document.cookie = 'prenom=';
 
 // Options
 
-document.cookie = 'prenom = John; path=/admin'; // le cookie sera dispo que sur le repertoire admin.
-document.cookie = 'prenom = John; path=/admin; domain=believmy.com'; //le cookie sera dispo que sur ce domain là.
-let date = new Date(Date.now() + 3153600000);
-date = date.toUTCString()
-document.cookie = 'prenom = John; path=/admin; domain=believmy.com; expires=' + date;
-document.cookie = 'prenom = John; path=/admin; domain=believmy.com; max-age= 3153600000';
-document.cookie = 'prenom = John; path=/admin; domain=believmy.com; max-age= 3153600000; secure'; // on utilise notre cookie que sur les sites https.
+document.cookie = 'prenom=John; path=/admin';
+document.cookie = 'prenom=John; path=/admin; domain=believemy.com';
+
+let date = new Date(Date.now() + 31536000000);
+date = date.toUTCString();
+document.cookie = 'prenom=John; path=/admin; domain=believemy.com; expires=' + date;
+
+document.cookie = 'prenom=John; path=/admin; domain=believemy.com; max-age=31536000000';
+
+document.cookie = 'prenom=John; path=/admin; domain=believemy.com; max-age=31536000000; secure';
