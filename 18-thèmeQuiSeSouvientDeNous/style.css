@@ -19,7 +19,16 @@ html, body {
     color: #ffffff;
   }
   
+  .white {
+    background-color: #f1f1f1;
+    color: #ffffff;
+  }
+  
   .dark button {
     background: #144098;
     color: #fff;
+  }
+  .white button{
+    background-color: #d1a2a2;
+    color: #070707;
   }
