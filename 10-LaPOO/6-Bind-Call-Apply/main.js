@@ -17,9 +17,9 @@ function direBonjour(arme, degats) {
 }
 
 // direBonjour.apply(gandalf, arme);
-// direBonjour.call(gandalf, arme[0], arme[1]); // La seule différence : apply accepte les arguments nécessaire sous forme de tableau, à l'inverse call par variables
+// direBonjour.call(gandalf, arme[0], arme[1]); // La seule différence : apply a besoin d'un tableau pour passer des arguments, alors que call peut donner les arguments un à un.
 
-// Bind
+// Bind : objectif est de changer le contexte de this
 // Objectif : Créer une nouvelle fonction, avec le même contexte et les mêmes propriétés que la fonction en paramètre (permet de changer le this)
 // Surtout utilisé avec les fonctions anonymes à l'intérieur d'un objet
 

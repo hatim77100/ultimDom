@@ -20,8 +20,8 @@ function Utilisateur(prenom, nom, email) {
 
 // on crée un objet
 
-var mark = new Utilisateur("Mark", "Zuckerberg", "mark@zuckerberg");
-var bill = new Utilisateur("bill", "Gates", "bill@gatesnotes.com");
+const mark = new Utilisateur("Mark", "Zuckerberg", "mark@zuckerberg");
+const bill = new Utilisateur("bill", "Gates", "bill@gatesnotes.com");
 
 // console.log(mark);
 // console.log(bill.prenom);
@@ -44,5 +44,5 @@ function Logement(type, annee, placeDeParking, proprietaire){
 
 var appartementA = new Logement("Appartement", 2014, true, mark) // Mark est un objet
 
-console.log(appartementA);
 // console.log(appartementA.proprietaire.prenom);
+console.log(appartementA);

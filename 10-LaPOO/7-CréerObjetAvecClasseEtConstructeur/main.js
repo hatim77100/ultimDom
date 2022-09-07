@@ -12,7 +12,8 @@ class Utilisateur {
 // On crée un objet
 var mark = new Utilisateur('Mark', 'Zuckerberg', 'mark@facebook.com');
 mark.sePresenter();
-
+// mark.age = "40";
+console.log(mark);
 class Animal {
     constructor(nombreDePattes, poids) {
       this.nombreDePattes = nombreDePattes;
